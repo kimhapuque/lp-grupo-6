@@ -1,33 +1,49 @@
 .header {
     display: flex;
+    /* flex-direction: row; Por padrão é row, então não uso agora*/
     justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 73px;
 }
 
-ul {
+.navigation {
+    display: flex;
+    gap: 6rem;
+}
+
+.navigation a {
     color: #CD313E;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
+    text-decoration: none;
     font-weight: 400;
     line-height: 24px;
+    font-size: 1.4rem;
 }
 
-button {
-    width: 189.131px;
-    height: 36px;
+.header img {
+    width: 9.8rem;
+    height: 3.8rem;
+}
+
+.header button {
+    width: 160px;
+    height: 26px;
     flex-shrink: 0;
-    background-color: #CD313E;
-    color: #fff;
+    border-radius: 2px;
+    background-color: #eb423f;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 18px;
+    text-align: center;
 }
 
 .content {
     padding-top: 240px;
     padding-bottom: 440px;
     margin-bottom: 100px;
-    background: url('assets/background.png');
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-origin: border-box;
 }
 
 .content div {
